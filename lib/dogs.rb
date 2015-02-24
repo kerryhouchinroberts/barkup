@@ -35,6 +35,12 @@ class Dogs
     @dogs.select {|dog| dog[:size] == :small}
   end
 
+  def huge_dog
+    @dogs.select {|dog| dog[:size] == :huge}.first
+  end
+
+  
+
 
 
 end
